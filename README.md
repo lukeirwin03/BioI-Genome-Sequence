@@ -55,7 +55,7 @@ printDNA(): The printDNA() method will just loop through both of the strands(mai
   public void printDNA(){
     for(int i = 0; i < strand1.length; i++) // loops through the DNA strands and prints it out in an organized format
       System.out.println(strand1[i] + " - " + getPair(i, strand1));
-    }
+  }
 ```
 
 getNumSequence(): The getNumSequence() method uses a scanner to ask the user for a base pair sequence to search through the DNA for. The method will then use a for loop to loop through the entire strand and look for the sequence. Any time that the DNA sequence occurs in the strand, the loop will add 1 to a counter variable. Once the entire array has been searched, the count variable is returned.
