@@ -5,7 +5,7 @@ What it is: The code that I wrote works but having two separate classes with one
 
 Methods In DNA:
 
-DNA()[1^]: The constructor in the DNA class has no variables that need to be input because within the constrtuctor, there is a scanner that interacts with the user. The scanner will ask the user to input the length of the DNA strand or the number of base pairs for the length and then uses a for loop that uses Math.random() to make a random number 1 through 4. Then the random numbers are assigned a specific letter and are added to an array of strings.
+DNA()[^1]: The constructor in the DNA class has no variables that need to be input because within the constrtuctor, there is a scanner that interacts with the user. The scanner will ask the user to input the length of the DNA strand or the number of base pairs for the length and then uses a for loop that uses Math.random() to make a random number 1 through 4. Then the random numbers are assigned a specific letter and are added to an array of strings.
 
 getPair()[^2]: The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in.
 
