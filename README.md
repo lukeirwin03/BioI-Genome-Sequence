@@ -78,3 +78,13 @@ getNumSequence(): The getNumSequence() method uses a scanner to ask the user for
      System.out.println("Sequence " + seq + " appears in Strand1 " + count + " times.");
   }
 ```
+
+toString(): The toString() method is a way of printing out the DNA object and it just returns the strand1 array as a string. This is done in order to simulate an NCBI-like random DNA sequence. 
+```
+  public String toString(){ // prints out the DNA object as a string
+    String dnaString = "";
+    for(int i = 0; i < strand1.length; i++)
+      dnaString += strand1[i];
+    return "\n" + dnaString;
+  }
+```
