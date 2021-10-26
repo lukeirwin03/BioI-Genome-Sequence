@@ -5,18 +5,76 @@ What it is: The code that I wrote works but having two separate classes with one
 
 Methods In DNA:
 
-DNA()[^1]: The constructor in the DNA class has no variables that need to be input because within the constrtuctor, there is a scanner that interacts with the user. The scanner will ask the user to input the length of the DNA strand or the number of base pairs for the length and then uses a for loop that uses Math.random() to make a random number 1 through 4. Then the random numbers are assigned a specific letter and are added to an array of strings.
+DNA(): The constructor in the DNA class has no variables that need to be input because within the constrtuctor, there is a scanner that interacts with the user. The scanner will ask the user to input the length of the DNA strand or the number of base pairs for the length and then uses a for loop that uses Math.random() to make a random number 1 through 4. Then the random numbers are assigned a specific letter and are added to an array of strings.
+```
+  public DNA(){
+    Scanner kb = new Scanner(System.in); // scanner for user input
+    System.out.print("How long would you like the DNA strand to be? ");
+    length1 = kb.nextInt(); // length of the DNA determined by user input
+    strand1 = new String[length1];  // creates the array
+    for(int i = 0; i < strand1.length; i++){ // fills the array
+       random = (int)((Math.random() * 4) + 1);
+       if(random == 1)
+          strand1[i] = "A";
+       if(random == 2)
+          strand1[i] = "T";
+       if(random == 3)
+          strand1[i] = "C";
+       if(random == 4)
+          strand1[i] = "G";
+    }
+  }
+  ```
 
-getPair()[^2]: The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in.
+getPair(): The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in.
+```
+  public static String getPair(int i, String[] strand1){
+    if(strand1[i].equals("A")) // compares the index of strand1 to a letter
+        return "T"; // returns complement
+      if(strand1[i].equals("T"))
+        return "A";
+      if(strand1[i].equals("C"))
+        return "G";
+      if(strand1[i].equals("G"))
+        return "C";
+      return "";
+  }
+```
 
-pairDNA()[^3]: The pairDNA() method will create an array of the complements to the main DNA strand. It does this by utilizing the getPair() method.
+pairDNA(): The pairDNA() method will create an array of the complements to the main DNA strand. It does this by utilizing the getPair() method.
+```
+  public void pairDNA(){
+    String[] strand2 = new String[strand1.length]; // makes the complement Array
+    for(int i = 0; i < strand2.length; i++) // loops through strand1 and uses getPair() to fill new strand with complements
+      strand2[i] = getPair(i, strand1); 
+  }
+```
 
-printDNA()[^4]: The printDNA() method will just loop through both of the strands(main and complementary) and print out the index of the strand and its complement. There is also a little bit of formatting just to make it look a little nicer.
+printDNA(): The printDNA() method will just loop through both of the strands(main and complementary) and print out the index of the strand and its complement. There is also a little bit of formatting just to make it look a little nicer.
+```
+  public void printDNA(){
+    for(int i = 0; i < strand1.length; i++) // loops through the DNA strands and prints it out in an organized format
+      System.out.println(strand1[i] + " - " + getPair(i, strand1));
+    }
+```
 
-getNumSequence()[^5]: The getNumSequence() method uses a scanner to ask the user for a base pair sequence to search through the DNA for. The method will then use a for loop to loop through the entire strand and look for the sequence. Any time that the DNA sequence occurs in the strand, the loop will add 1 to a counter variable. Once the entire array has been searched, the count variable is returned.
+getNumSequence(): The getNumSequence() method uses a scanner to ask the user for a base pair sequence to search through the DNA for. The method will then use a for loop to loop through the entire strand and look for the sequence. Any time that the DNA sequence occurs in the strand, the loop will add 1 to a counter variable. Once the entire array has been searched, the count variable is returned.
+```
+  public void getNumSequence(){
+    Scanner kb = new Scanner(System.in); // scanner for user input
+    int count = 0; // counter for how many times the sequence occurs in strand1
+    System.out.print("Enter Desired Sequence: ");
+    seq = kb.next();
+    seq = seq.toUpperCase(); // makes sure that it will be formatted correctly
+    strand1String = "";
 
-[^1]:
-[^2]:
-[^3]:
-[^4]:
-[^5]:
+    for(int i = 0; i < strand1.length; i++) // makes strand1 a string for sake of ease when searching
+      strand1String += strand1[i];
+
+    for(int i = 0; i < strand1String.length() - seq.length(); i++){ // searches strand1 for the desired sequence
+      if(strand1String.substring(i, i + seq.length()).equals(seq))
+        count++;
+    }
+     System.out.println("Sequence " + seq + " appears in Strand1 " + count + " times.");
+  }
+```
