@@ -1,9 +1,9 @@
 # BioI-Genome-Sequence
-TLDR: This program creates a simulated strand of DNA has some methods to loop through it to find a desired sequence and count how many times it appears in the DNA strand.
+\nTLDR: This program creates a simulated strand of DNA has some methods to loop through it to find a desired sequence and count how many times it appears in the DNA strand.
 ------------------------------------------------------------------------------
-What it is: The code that I wrote works but having two separate classes with one being the Main class and the other being the DNA class. The way in which these two classes interact is that the Main class is only used to create a DNA object and call the methods with respect to the DNA object. The DNA class houses all of the methods that can be called of DNA and all of the variables needed to make it work. 
-Methods In DNA:
-Constructor: The constructor in the DNA class has no variables that need to be input because within the constrtuctor, there is a scanner that interacts with the user. The scanner will ask the user to input the length of the DNA strand or the number of base pairs for the length and then uses a for loop that uses Math.random() to make a random number 1 through 4. Then the random numbers are assigned a specific letter and are added to an array of strings. 
+\nWhat it is: The code that I wrote works but having two separate classes with one being the Main class and the other being the DNA class. The way in which these two classes interact is that the Main class is only used to create a DNA object and call the methods with respect to the DNA object. The DNA class houses all of the methods that can be called of DNA and all of the variables needed to make it work. 
+\nMethods In DNA:
+\nConstructor: The constructor in the DNA class has no variables that need to be input because within the constrtuctor, there is a scanner that interacts with the user. The scanner will ask the user to input the length of the DNA strand or the number of base pairs for the length and then uses a for loop that uses Math.random() to make a random number 1 through 4. Then the random numbers are assigned a specific letter and are added to an array of strings. 
 `
   public DNA(){
     Scanner kb = new Scanner(System.in);
