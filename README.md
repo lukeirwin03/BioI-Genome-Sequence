@@ -105,3 +105,5 @@ Enter Desired Sequence: ac *(User Input)*
 Sequence AC appears in Strand1 2 times.  
   
 ACCCAACCTG  
+# Contact Info
+Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
