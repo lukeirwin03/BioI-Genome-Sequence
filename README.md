@@ -1,4 +1,4 @@
-# BioI-Genome-Sequence
+## BioI-Genome-Sequence
 Purpose: This program creates a simulated strand of DNA has some methods to loop through it to find a desired sequence and count how many times it appears in the DNA strand.
 ------------------------------------------------------------------------------
 What it is: The code that I wrote works but having two separate classes with one being the Main class and the other being the DNA class. The way in which these two classes interact is that the Main class is only used to create a DNA object and call the methods with respect to the DNA object. The DNA class houses all of the methods that can be called of DNA and all of the variables needed to make it work. 
@@ -88,3 +88,20 @@ toString(): The toString() method is a way of printing out the DNA object and it
     return "\n" + dnaString;
   }
 ```
+
+# Sample Input/Output
+How long would you like the DNA strand to be? 10 *(User Input)*  
+A - T  
+C - G  
+C - G  
+C - G  
+A - T  
+A - T  
+C - G  
+C - G  
+T - A  
+G - C  
+Enter Desired Sequence: ac *(User Input)*  
+Sequence AC appears in Strand1 2 times.  
+  
+ACCCAACCTG  
