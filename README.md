@@ -1,5 +1,5 @@
 # BioI-Genome-Sequence
-TLDR: This program creates a simulated strand of DNA has some methods to loop through it to find a desired sequence and count how many times it appears in the DNA strand.
+Purpose: This program creates a simulated strand of DNA has some methods to loop through it to find a desired sequence and count how many times it appears in the DNA strand.
 ------------------------------------------------------------------------------
 What it is: The code that I wrote works but having two separate classes with one being the Main class and the other being the DNA class. The way in which these two classes interact is that the Main class is only used to create a DNA object and call the methods with respect to the DNA object. The DNA class houses all of the methods that can be called of DNA and all of the variables needed to make it work. 
 
@@ -26,7 +26,7 @@ DNA(): The constructor in the DNA class has no variables that need to be input b
   }
   ```
 
-getPair(): The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in.
+getPair(): The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in. It does this with four unique if statements that compare the string that is taken in from the *strand1* array and return the complementary base pair.
 ```
   public static String getPair(int i, String[] strand1){
     if(strand1[i].equals("A")) // compares the index of strand1 to a letter
@@ -41,7 +41,7 @@ getPair(): The getPair() method will take in one string at a time and return the
   }
 ```
 
-pairDNA(): The pairDNA() method will create an array of the complements to the main DNA strand. It does this by utilizing the getPair() method.
+pairDNA(): The pairDNA() method will create an array of the complements to the main DNA strand. It does this by utilizing a for loop and calls the getPair() method. 
 ```
   public void pairDNA(){
     String[] strand2 = new String[strand1.length]; // makes the complement Array
@@ -50,7 +50,7 @@ pairDNA(): The pairDNA() method will create an array of the complements to the m
   }
 ```
 
-printDNA(): The printDNA() method will just loop through both of the strands(main and complementary) and print out the index of the strand and its complement. There is also a little bit of formatting just to make it look a little nicer.
+printDNA(): The printDNA() method will just loop through both of the strands(main and complementary) and print out the index of the strand and its complement. There is also a little bit of formatting just to make it look a more comprehensible and partially simulate the structure of DNA.
 ```
   public void printDNA(){
     for(int i = 0; i < strand1.length; i++) // loops through the DNA strands and prints it out in an organized format
