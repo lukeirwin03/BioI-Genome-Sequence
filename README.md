@@ -105,5 +105,9 @@ Enter Desired Sequence: ac *(User Input)*
 Sequence AC appears in Strand1 2 times.  
   
 ACCCAACCTG  
+# Applications
+This can be used to visualize how sequencing DNA can look and replicate it in a simple and visual way. It is used to demonstrate how researchers can take a strand of DNA and identify the base pairs and specific sequences. Another use for it could be with sample files with a specific sample of DNA and a specific gene to look for within the sample. This is more of a learning tool to visualize and demonstrate the process in a simple way.
+
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
+
