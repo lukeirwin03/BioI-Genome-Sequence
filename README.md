@@ -27,6 +27,7 @@ DNA(): The constructor in the DNA class has no variables that need to be input b
   ```
 
 getPair(): The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in. It does this with four unique if statements that compare the string that is taken in from the *strand1* array and return the complementary base pair.
+![Test Image](file:///C:/Users/lukes/OneDrive/Desktop/yimwa5a-p6-yimwa-small.gif)
 ```
   public static String getPair(int i, String[] strand1){
     if(strand1[i].equals("A")) // compares the index of strand1 to a letter
