@@ -121,3 +121,5 @@ This can be used to visualize how sequencing DNA can look and replicate it in a 
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
 
+# Known Bugs
+As of 11/17/21 there are no known bugs in the program.
