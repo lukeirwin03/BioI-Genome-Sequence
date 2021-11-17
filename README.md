@@ -113,7 +113,10 @@ This program was written and tested in Java 17 using Eclipse 4.12. There are no 
 This can be used to visualize how sequencing DNA can look and replicate it in a simple and visual way. It is used to demonstrate how researchers can take a strand of DNA and identify the base pairs and specific sequences. Another use for it could be with sample files with a specific sample of DNA and a specific gene to look for within the sample. This is more of a learning tool to visualize and demonstrate the process in a simple way. It basically replicates NCBI's random sequence generator, but my code also give you the pair. 
 
 # Files in this Directory
-
+- Main.java
+- DNA.java
+- LICENSE: Boost Software License 1.0
+- This README
 
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
