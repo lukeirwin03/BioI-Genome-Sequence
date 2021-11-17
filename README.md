@@ -41,7 +41,7 @@ getPair(): The getPair() method will take in one string at a time and return the
       return "";
   }
 ```
-A method similar to this one has been done in a Python program that I found in a research article written by B. Yimwadsana and P. Artiwet.[^1]  
+A method similar to this one has been done in a Javascript program that I found in a research article written by B. Yimwadsana and P. Artiwet.[^1]  
 
 ![yimwa5a-p6-yimwa-small](https://user-images.githubusercontent.com/89871736/142282197-6f13eea1-b843-4c88-86c5-4585e837aa4b.gif)
 
