@@ -27,7 +27,7 @@ DNA(): The constructor in the DNA class has no variables that need to be input b
   ```
 
 getPair(): The getPair() method will take in one string at a time and return the abreviated base pair that pairs with the one that is taken in. It does this with four unique if statements that compare the string that is taken in from the *strand1* array and return the complementary base pair.
-![Test Image](file:///C:/Users/lukes/OneDrive/Desktop/yimwa5a-p6-yimwa-small.gif)
+
 ```
   public static String getPair(int i, String[] strand1){
     if(strand1[i].equals("A")) // compares the index of strand1 to a letter
@@ -41,6 +41,10 @@ getPair(): The getPair() method will take in one string at a time and return the
       return "";
   }
 ```
+A method similar to this one has been done in a Python program that I found in a research article written by B. Yimwadsana and P. Artiwet.[^1]  
+
+![yimwa5a-p6-yimwa-small](https://user-images.githubusercontent.com/89871736/142282197-6f13eea1-b843-4c88-86c5-4585e837aa4b.gif)
+
 
 pairDNA(): The pairDNA() method will create an array of the complements to the main DNA strand. It does this by utilizing a for loop and calls the getPair() method. 
 ```
@@ -122,5 +126,8 @@ This can be used to visualize how sequencing DNA can look and replicate it in a 
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
 
+
 # Known Bugs
 As of 11/17/21 there are no known bugs in the program.
+
+[^1]: B. Yimwadsana and P. Artiwet, “On optimizing DNA sequence design for DNA logic and circuit,” TENCON 2018 - 2018 IEEE Region 10 Conference, 2018. 
