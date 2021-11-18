@@ -123,6 +123,12 @@ This can be used to visualize how sequencing DNA can look and replicate it in a 
 - LICENSE: Boost Software License 1.0
 - This README
 
+# Install Instructions
+Simply download the file and open them in a Java IDE. If you choose Eclipse, you need to create a new project and you can open the files within Eclipse and compile.
+
+# Operating Instructions 
+Once you run the code, it will prompt you to input an integer to represent how many base pairs long the simulated DNA strand will be. It will then create a simulated strand of DNA that is however many base pairs long as the integer that the user inputs. It will then prompt you to enter a target sequence that will be searched for. It has to be in terms of A's, T's, C's, and G's. Then it will return the number of times that the target sequence occurs within the strand.
+
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
 
