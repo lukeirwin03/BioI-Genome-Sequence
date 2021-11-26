@@ -41,10 +41,10 @@ getPair(): The getPair() method will take in one string at a time and return the
       return "";
   }
 ```
-A method similar to this one has been done in a Javascript program that I found in a research article written by B. Yimwadsana and P. Artiwet.[^1]  
+A method similar to this one has been done in a Javascript program that I found in a research article written by B. Yimwadsana and P. Artiwet and is shown in *Figure 1* [1]. But for this one, they used a switch case instead of the if statements that I had. They effectively do the same thing, it is just a little more condensed. 
 
 ![yimwa5a-p6-yimwa-small](https://user-images.githubusercontent.com/89871736/142282197-6f13eea1-b843-4c88-86c5-4585e837aa4b.gif)
-
+*Figure 1*
 
 pairDNA(): The pairDNA() method will create an array of the complements to the main DNA strand. It does this by utilizing a for loop and calls the getPair() method. 
 ```
@@ -136,4 +136,5 @@ Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu
 # Known Bugs
 As of 11/17/21 there are no known bugs in the program.
 
-[^1]: B. Yimwadsana and P. Artiwet, “On optimizing DNA sequence design for DNA logic and circuit,” TENCON 2018 - 2018 IEEE Region 10 Conference, 2018. 
+# References for this Repository
+[1] B. Yimwadsana and P. Artiwet, “On optimizing DNA sequence design for DNA logic and circuit,” TENCON 2018 - 2018 IEEE Region 10 Conference, 2018. 
