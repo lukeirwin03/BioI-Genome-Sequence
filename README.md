@@ -114,7 +114,7 @@ ACCCAACCTG
 This program was written and tested in Java 17 using Replit.com, a browser IDE. 
 
 # Applications
-This can be used to visualize how sequencing DNA can look and replicate it in a simple and visual way. It is used to demonstrate how researchers can take a strand of DNA and identify the base pairs and specific sequences. Another use for it could be with sample files with a specific sample of DNA and a specific gene to look for within the sample. This is more of a learning tool to visualize and demonstrate the process in a simple way. It basically replicates NCBI's random sequence generator, but my code also give you the pair. 
+This can be used to visualize how sequencing DNA can look and replicate it in a simple and visual way. It is used to demonstrate how researchers can take a strand of DNA and identify the base pairs and specific sequences. Another use for it could be with sample files with a specific sample of DNA and a specific gene to look for within the sample. This is more of a learning tool to visualize and demonstrate the process in a simple way. It basically replicates NCBI's random sequence generator, but my code also gives you the pair. 
 
 # Files in this Directory
 - Main.java
@@ -126,13 +126,13 @@ This can be used to visualize how sequencing DNA can look and replicate it in a 
 Simply download the files and go to Replit.com. Once on Replit.com, you can create a new project (or repl), and you can import the files from your computer into the IDE. Then you can just run the code.
 
 # Operating Instructions 
-Once you run the code, it will prompt you to input an integer to represent how many base pairs long the simulated DNA strand will be. It will then create a simulated strand of DNA that is however many base pairs long as the integer that the user inputs. It will then prompt you to enter a target sequence that will be searched for. It has to be in terms of A's, T's, C's, and G's. Then it will return the number of times that the target sequence occurs within the strand.
+Once you run the code, it will prompt you to input an integer to represent how many base pairs long the simulated DNA strand will be. It will then create a simulated strand of DNA that is however many base pairs long as the integer that the user inputs. It will then prompt you to enter a target sequence that will be searched for. It has to be in terms of A's, T's, C's, and G's. Then it will return the number of times that the target sequence occurs within the strand. If the user inputs a letter that is not an A, C, T, or G, the program will always return 0 for the number of times the sequence occurs in *strand1*.
 
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
 
 # Known Bugs
-As of 11/17/21 there are no known bugs in the program.
+As of 11/28/21 there are no known bugs in the program.
 
 # References for this Repository
 [1] B. Yimwadsana and P. Artiwet, “On optimizing DNA sequence design for DNA logic and circuit,” TENCON 2018 - 2018 IEEE Region 10 Conference, 2018. 
