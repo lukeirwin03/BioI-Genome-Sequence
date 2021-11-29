@@ -111,7 +111,7 @@ Sequence AC appears in Strand1 2 times.
 ACCCAACCTG
 
 # Dependencies and Configuration Instructions
-This program was written and tested in Java 17 using Eclipse 4.12. There are no dependencies and should be able to be run in any IDE.
+This program was written and tested in Java 17 using Replit.com, a browser IDE. 
 
 # Applications
 This can be used to visualize how sequencing DNA can look and replicate it in a simple and visual way. It is used to demonstrate how researchers can take a strand of DNA and identify the base pairs and specific sequences. Another use for it could be with sample files with a specific sample of DNA and a specific gene to look for within the sample. This is more of a learning tool to visualize and demonstrate the process in a simple way. It basically replicates NCBI's random sequence generator, but my code also give you the pair. 
@@ -123,14 +123,13 @@ This can be used to visualize how sequencing DNA can look and replicate it in a 
 - This README
 
 # Install Instructions
-Simply download the file and open them in a Java IDE. If you choose Eclipse, you need to create a new project and you can open the files within Eclipse and compile.
+Simply download the files and go to Replit.com. Once on Replit.com, you can create a new project (or repl), and you can import the files from your computer into the IDE. Then you can just run the code.
 
 # Operating Instructions 
 Once you run the code, it will prompt you to input an integer to represent how many base pairs long the simulated DNA strand will be. It will then create a simulated strand of DNA that is however many base pairs long as the integer that the user inputs. It will then prompt you to enter a target sequence that will be searched for. It has to be in terms of A's, T's, C's, and G's. Then it will return the number of times that the target sequence occurs within the strand.
 
 # Contact Info
 Author: Luke Irwin, lukeirwin [at] unomaha [dot] edu  
-
 
 # Known Bugs
 As of 11/17/21 there are no known bugs in the program.
